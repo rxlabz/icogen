@@ -5,7 +5,7 @@ command line iOS & Android color icons generator, icogen helps you to replace th
 ## Install
 
 ```bash
-pub global activate stagehand
+pub global activate icogen
 ```
 
 ## Use 
