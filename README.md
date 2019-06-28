@@ -13,7 +13,7 @@ pub global activate stagehand
 To replace all the default icons with a simple color icon
 
 ```sh
-pub global icongen -c \#ffff00 -p path/to/your/flutter/project
+pub global icogen -c \#ffff00 -p path/to/your/flutter/project
 ```
 
 - `-c` hex color value ( don't forget to escape `\#`)

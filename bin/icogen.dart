@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:args/args.dart';
-import 'package:icongen/constants.dart';
-import 'package:icongen/icon_generator.dart';
-import 'package:icongen/utils.dart';
+import 'package:icogen/constants.dart';
+import 'package:icogen/icon_generator.dart';
+import 'package:icogen/utils.dart';
 
 main(List<String> arguments) async {
   final parser = ArgParser();

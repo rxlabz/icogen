@@ -13,8 +13,15 @@ int hexToABGR(String hexColor) {
   final g = int.tryParse(hexValue.substring(2, 4), radix: 16);
   final b = int.tryParse(hexValue.substring(4, 6), radix: 16);
 
-  return Color.fromRgba(r, g, b, 255);
+  if (_isChannelValid(r) && _isChannelValid(g) && _isChannelValid(b)) {
+    return Color.fromRgba(r, g, b, 255);
+  }
+
+  stderr.writeln('Invalid color : $hexColor ');
+  exit(1);
 }
+
+bool _isChannelValid(int value) => value != null && value >= 0 && value <= 255;
 
 Future<Image> imageFromFile(File file) async {
   final bytes = await file.readAsBytes();
